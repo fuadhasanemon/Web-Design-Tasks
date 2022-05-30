@@ -2704,14 +2704,32 @@ only screen and (min-width: 1400px) {
   background-color: #F2F2F2;
 }
 
+.slider__content .image-wrap {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .slider__content .image-wrap img {
   background-size: cover;
   background-position: center;
   object-fit: contain;
 }
 
+.slider__content .content {
+  position: relative;
+}
+
+.slider__content .content .text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.slider__content .content .text h2, .slider__content .content .text p {
+  color: #fff;
+}
+
 .slider__content .content p {
-  margin: 0 20px;
   display: flex;
   vertical-align: middle;
   align-self: center;
